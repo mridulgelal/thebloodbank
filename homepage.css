@@ -1,0 +1,52 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    font-family: 'Poppins', sans-serif;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height:11vh;
+   
+}
+#logo{
+    
+       margin: 5px 0px 0px -150px;
+        height: 10vh;
+}
+
+.nav-links{
+    display:flex;
+  
+    justify-content: space-around;
+     width: 50%;
+    font-size: 20px;
+    letter-spacing: 2px;
+    word-spacing: 10px;
+    margin:0px -90px 0px 0px; 
+    font-weight: 100;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+
+
+.nav-links li{
+    list-style-type: none;
+  
+}
+    
+.main-section{
+    
+    height: 100vh;
+
+}
+
+
+.footer{
+    background-color: black;
+    height:40vh;
+}
