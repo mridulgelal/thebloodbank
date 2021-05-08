@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./login.css">
+    
+    <title>UserHistory&Event</title>
+</head>
+<body>
+    <header>
+        <button id="log-out" style="margin: -10px 0px 0px 1050px;" >    <a href="./logout">LOG OUT</a></button>
+    </header>
+   
+<div class="container" id="container">
+	<div class="form-container sign-up-container">
+		<form action="#">
+			<h1>Create Event</h1>
+			
+			<span>Enter details for Event</span>
+            <input type="text" name="organization-name" placeholder="Organization Name" />
+			<input type="text" name="contact" placeholder="Contact" />
+			<input type="text" name="location" placeholder="Location" />
+			<input type="date" name="time" placeholder="Date" />
+            <button>Create</button>
+		</form>
+	</div>
+	<div class="form-container sign-in-container">
+		<form action="">
+		<form action="">
+			<form action="/auth/donor" method="POST">
+			<h1>Donation History</h1>
+			<span>Enter Your Donation Details</span>
+            <input type="date" name="date-you-donated" placeholder="Date You Donated" />
+			<input type="Text" name="donated-organization" placeholder="Donated organization" />
+			
+           
+			<button>Update Record</button>
+		</form>
+	</div>
+	<div class="overlay-container">
+		<div class="overlay">
+			<div class="overlay-panel overlay-left">
+                <img src="./images/TheBloodBankLogowhite.png" alt="logo" id="logo">
+				<h1>Welcome Back!</h1>
+				<p>To keep your donation record enter you details</p>
+				<button class="ghost" id="signIn">Update Record</button>
+			</div>
+			<div class="overlay-panel overlay-right">
+                <img src="./images/TheBloodBankLogowhite.png" alt="logo" id="logo">
+				<h1 style="margin-left: 20px;">Have a Event ?</h1>
+				<p>Post your donation program details to reach more donors.</p>
+				<button class="ghost" id="signUp">Create Event</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script src="login.js"></script>
+</body>
+</html>

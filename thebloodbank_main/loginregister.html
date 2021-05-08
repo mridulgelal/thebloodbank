@@ -11,18 +11,18 @@
    
 <div class="container" id="container">
 	<div class="form-container sign-up-container">
-		<form action="#">
+		<form action="/auth/register" method="POST">
 			<h1>Create Account</h1>
 			
 			<span>Enter details for registration</span>
-            <input type="text" placeholder="Name" />
-			<input type="text" placeholder="Address" />
-			<input type="text" placeholder="Contact" />
-			<input type="email" placeholder="Email" />
-			<input type="password" placeholder="Password" />
+            <input type="text" name ='create_fname' placeholder="Name" required />
+			<input type="text"name ='create_address' placeholder="Address" required  />
+			<input type="text" name ='create_contact'placeholder="Contact" required  />
+			<input type="email" name ='create_email'placeholder="Email" required  />
+			<input type="password" name ='create_password'placeholder="Password"  required />
 
 			
-			<select name="blood-group" class="group-select">
+			<select name="blood_group"  class="group-select"required >
 				<option value="">---&emsp;&emsp;&emsp;&emsp;Blood Group&emsp;&emsp;&emsp;&emsp;---</option>
 				<option value="A+">A+</option>
 				<option value="A-">A-</option>
@@ -39,12 +39,12 @@
 		</form>
 	</div>
 	<div class="form-container sign-in-container">
-		<form action="#">
+		<form action="/auth/login" method="POST">
 			<h1>Sign in</h1>
 			
 			<span>Enter login details</span>
-			<input type="email" placeholder="Email" />
-			<input type="password" placeholder="Password" />
+			<input type="email" name = "email"placeholder="Email" />
+			<input type="password" name = "password"placeholder="Password" />
 			<a href="#">Forgot your password?</a>
 			<button>Sign In</button>
 		</form>
